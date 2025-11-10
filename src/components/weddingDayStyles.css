@@ -1,0 +1,69 @@
+/* Wedding Day Message Styles */
+.wedding-day-message {
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeInScale 1.2s ease-out;
+}
+
+.message-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  animation: gentlePulse 2s ease-in-out infinite;
+}
+
+.message-title {
+  font-size: 2.8rem !important;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.message-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.decoration-heart {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+.decoration-date {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
