@@ -30,7 +30,9 @@ const WeddingDetails = () => {
               <i className="far fa-clock"></i>
               <h4>Nikah</h4>
               <p>4:00 PM</p>
-              <p className="small">Please arrive 15 minutes early</p>
+              <p className="small">
+                Your early presence will bless our special moment
+              </p>
             </div>
             <div className="detail-item">
               <i className="fas fa-glass-cheers"></i>
