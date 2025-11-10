@@ -1,0 +1,76 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sacramento&family=Noto+Naskh+Arabic&display=swap');
+
+.app {
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2c3e50;
+  background-color: #faf8f6;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* small helpers used by the WeddingInvite component */
+.font-esthetic {
+  font-family: 'Sacramento', cursive;
+}
+.font-arabic {
+  font-family: 'Noto Naskh Arabic', serif;
+}
+
+.invite-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* layout for small screens: single column */
+@media (max-width: 576px) {
+  .invite-root {
+    flex-direction: column;
+  }
+}
+
+/* center content */
+.invite-main {
+  flex: 1 1 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.invite-left {
+  flex: 1 1 50%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.06));
+}
+
+.bg-cover-home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
