@@ -32,7 +32,7 @@ const Welcome = ({ guestName, onOpen, isLoading }) => {
         </div>
         <div className="welcome-footer">
           <p className="guest-text italic-text">
-            Dear {guestName || "Honored Guest"},
+            Dear {guestName || "Honored Guest"}
           </p>
           <button
             className={`btn-open ${isLoading ? "loading" : ""}`}
