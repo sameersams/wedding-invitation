@@ -5,6 +5,7 @@ import Countdown from "./components/Countdown";
 import VenueMap from "./components/VenueMap";
 import RSVP from "./components/RSVP";
 import Calendar from "./components/Calendar";
+import EndSymbol from "./components/EndSymbol";
 import "./App.css";
 import sound from "./assests/Beloved(chosic.com).mp3";
 
@@ -49,6 +50,7 @@ function App() {
           <Calendar />
           <VenueMap />
           <RSVP />
+          <EndSymbol />
         </div>
       )}
     </div>

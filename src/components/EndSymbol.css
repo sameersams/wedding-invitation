@@ -1,0 +1,44 @@
+.section-end-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.end-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-monogram {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Sacramento', cursive;
+  color: var(--color-primary);
+  font-size: 36px;
+}
+
+.end-monogram .initial {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.end-monogram .sep {
+  font-size: 24px;
+  color: var(--color-secondary);
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+@media (max-width: 480px) {
+  .end-monogram {
+    font-size: 24px;
+    gap: 8px;
+  }
+
+  .end-monogram .sep {
+    font-size: 18px;
+  }
+}
